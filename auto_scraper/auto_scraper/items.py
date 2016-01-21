@@ -22,3 +22,6 @@ class AutoItem(scrapy.Item):
     ccs = scrapy.Field()
     color = scrapy.Field()
     year = scrapy.Field()
+    contact_string = scrapy.Field()
+
+    price_string = scrapy.Field()
