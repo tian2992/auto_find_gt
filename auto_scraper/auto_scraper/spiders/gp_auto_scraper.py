@@ -15,11 +15,11 @@ class GpAutoScraperSpider(scrapy.Spider):
     def __init__(self):
         super(GpAutoScraperSpider, self).__init__()
 
-    def start_requests(self, min_cost=1, max_cost=45000):
+    def start_requests(self, min_cost=1, max_cost=60000):
             #return [scrapy.FormRequest(gp_domain_base + "/GP/carros/filtro",
             #for i in range(35):
             i = 1
-            pags = 50
+            pags = 70
             request_list = []
             for i in range(pags):
                 request_list.append(scrapy.FormRequest(self.start_urls + "/GP/carros/pagina/",
